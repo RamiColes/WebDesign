@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+
+<html>
+	<head>
+		<title> Chess </title>
+
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css"></link>
+
+		<script src="scripts/react.production.min.js"></script>
+		<script src="scripts/react-dom.production.min.js"></script>
+		<script src="scripts/babel.min.js" charset="utf-8"></script>
+		
+		<script type="text/babel" src="components/Piece.js"></script>
+		<script type="text/babel" src="components/Square.js"></script>
+		<script type="text/babel" src="components/Board.js"></script>
+		<script type="text/babel" src="components/Game.js"></script>
+		
+    <script type="text/babel">
+			// ========================================
+			ReactDOM.render(
+			  <Game />,
+			  document.getElementById('root')
+			);
+		</script>
+	</head>
+
+	<body class="container">
+		<h1>Chess game</h1>
+		<div id="root" class="container"></div>
+    	<p>Pour d&eacute;placer une pi&egrave;ce, cliquez dessus une premi&egrave;re fois puis cliquez sur une case valide pour la d&eacute;placer.</p>
+	</body>
+</html>

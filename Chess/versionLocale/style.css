@@ -1,0 +1,27 @@
+#game-board {
+	display: inline-flex;
+	flex-direction: column;
+	border: 1px solid black;
+}
+
+button {
+	padding: 0px;
+}
+
+.board-row {
+	height: 5vw;
+}
+
+.cell {
+	float: left;
+	width: 5vw;
+	height: 5vw;
+}
+
+.cellW {
+	background: white;
+}
+
+.cellB {
+	background: grey;
+}
